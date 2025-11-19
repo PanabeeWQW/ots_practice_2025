@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#generatesEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#generatesEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#hasReason -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#hasReason">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#hasStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#hasStep">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#interactsWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#interactsWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#materializesAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#materializesAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#requiresAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#requiresAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#triggersAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#triggersAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#actionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#actionName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#codeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#codeName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#eventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#eventName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_Search -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_Search">
+        <untitled-ontology-8:interactsWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_MainScreen"/>
+        <untitled-ontology-8:actionName>search</untitled-ontology-8:actionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_addToCart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_addToCart">
+        <untitled-ontology-8:interactsWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_GamePage"/>
+        <untitled-ontology-8:requiresAction rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_purchase"/>
+        <untitled-ontology-8:actionName>add_to_cart</untitled-ontology-8:actionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_intstall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_intstall">
+        <untitled-ontology-8:interactsWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_Library"/>
+        <untitled-ontology-8:actionName>install</untitled-ontology-8:actionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_purchase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_purchase">
+        <untitled-ontology-8:interactsWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_Checkout"/>
+        <untitled-ontology-8:actionName>purchase</untitled-ontology-8:actionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_viewGame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_viewGame">
+        <untitled-ontology-8:interactsWith rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_GamePage"/>
+        <untitled-ontology-8:actionName>view</untitled-ontology-8:actionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_cartPage_add_to_cart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_cartPage_add_to_cart">
+        <untitled-ontology-8:eventName>cartPage_add_to_cart</untitled-ontology-8:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_checkoutPage_purchase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_checkoutPage_purchase">
+        <untitled-ontology-8:eventName>checkoutPage_purchase</untitled-ontology-8:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_checkoutPage_purchase_success -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_checkoutPage_purchase_success">
+        <untitled-ontology-8:eventName>checkoutPage_purchase_success</untitled-ontology-8:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_gamePage_add_to_cart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_gamePage_add_to_cart">
+        <untitled-ontology-8:eventName>gamePage_add_to_cart</untitled-ontology-8:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_gamePage_view -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_gamePage_view">
+        <untitled-ontology-8:eventName>gamePage_view</untitled-ontology-8:eventName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_CartPage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_CartPage">
+        <untitled-ontology-8:codeName>cartPage</untitled-ontology-8:codeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_Checkout -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_Checkout">
+        <untitled-ontology-8:codeName>checkoutPage</untitled-ontology-8:codeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_GamePage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_GamePage">
+        <untitled-ontology-8:codeName>gamePage</untitled-ontology-8:codeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_Library -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_Library">
+        <untitled-ontology-8:codeName>libraryPage</untitled-ontology-8:codeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_MainScreen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_MainScreen">
+        <untitled-ontology-8:codeName>mainScreen</untitled-ontology-8:codeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason_BuyGame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason_BuyGame">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason_Gift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason_Gift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_AddToCart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_AddToCart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+        <untitled-ontology-8:materializesAs rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_addToCart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_OpenGamePage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_OpenGamePage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+        <untitled-ontology-8:materializesAs rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_viewGame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_Purchase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_Purchase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+        <untitled-ontology-8:materializesAs rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_purchase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_Search -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_Search">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step"/>
+        <untitled-ontology-8:materializesAs rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_Search"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#User_Alex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#User_Alex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#User"/>
+        <untitled-ontology-8:hasReason rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Reason_BuyGame"/>
+        <untitled-ontology-8:hasStep rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Step_Search"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:label>Связан</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Правило 3 — событие: добавление в корзину на CartPage</rdfs:comment>
+        <rdfs:label>GenerateEvent_cartPage_add_to_cart</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#interactsWith"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_CartPage"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#actionName"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                        <swrl:argument2>add_to_cart</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#generatesEvent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_cartPage_add_to_cart"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Правило 5 — успешная покупка на странице CheckoutPage</rdfs:comment>
+        <rdfs:label>PurchaseOnCheckoutGeneratesSuccessEvent</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#interactsWith"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_Checkout"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#actionName"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                        <swrl:argument2>purchase</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#generatesEvent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_checkoutPage_purchase_success"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Правило 2 — событие: добавление в корзину на GamePage</rdfs:comment>
+        <rdfs:label>GenerateEvent_gamePage_add_to_cart</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#interactsWith"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_GamePage"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#actionName"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                        <swrl:argument2>add_to_cart</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#generatesEvent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_gamePage_add_to_cart"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Правило 1 — событие: просмотр страницы игры)</rdfs:comment>
+        <rdfs:label>GenerateEvent_gamePage_view</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#interactsWith"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Interface_GamePage"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#actionName"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                        <swrl:argument2>view</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#generatesEvent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Event_gamePage_view"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Правило 4 — переход к покупке (обычное поведение)</rdfs:comment>
+        <rdfs:label>GenerateEvent_checkout_purchase</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#actionName"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                                <swrl:argument2>add_to_cart</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#requiresAction"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8/a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2025/10/untitled-ontology-8#Action_purchase"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
